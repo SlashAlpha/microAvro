@@ -17,7 +17,7 @@ topic:
 
 
 server:
-  port: 9080
+  port: 8099
 spring:
   kafka:
     bootstrap-servers: pkc-e0zxq.eu-west-3.aws.confluent.cloud:9092
@@ -33,7 +33,7 @@ spring:
       # CCloud Schema Registry Connection parameter
       schema.registry.url: https://psrc-xm8wx.eu-central-1.aws.confluent.cloud
       basic.auth.credentials.source: USER_INFO
-      schema.registry.basic.auth.user.info: *
+      schema.registry.basic.auth.user.info: *:*
     consumer:
       group-id: group_id
       auto-offset-reset: earliest
